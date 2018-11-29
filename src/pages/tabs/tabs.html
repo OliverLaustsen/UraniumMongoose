@@ -1,7 +1,10 @@
 <ion-tabs >
   <ion-tab [root]="newsTab" tabIcon="invoice"></ion-tab>
   <ion-tab [root]="trainingTab" tabIcon="dumbbell"></ion-tab>
-  <ion-tab [root]="createRouteTab" style="font-size: 32px;"tabIcon="md-add"></ion-tab>
+  <button (click)="popUpCreateRoute()">
+
+    <ion-tab  style="font-size: 32px;"tabIcon="md-add"></ion-tab>
+  </button>
   <ion-tab [root]="viewRouteTab" tabIcon="route"></ion-tab>
   <ion-tab [root]="profileTab" tabIcon="user"></ion-tab>
 </ion-tabs>
