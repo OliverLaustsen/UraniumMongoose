@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { AlertController } from 'ionic-angular'
+
+import { Component, ViewChild } from '@angular/core';
+import { AlertController, NavController, NavParams, Tabs } from 'ionic-angular'
 
 import { NewsPage } from '../news/news'
 import { TrainingPage } from '../training/training'
@@ -17,25 +18,29 @@ export class TabsPage {
   createRouteTab = CreateRoutePage;
   viewRouteTab = ViewRoutePage;
   profileTab = ProfilePage;
+  @ViewChild("tabBar") tabBar: Tabs;
 
-  constructor(private alertCtrl: AlertController) {
-
+  constructor(public navParams: NavParams, private alertCtrl: AlertController, private navCtrl: NavController) {
   }
 
   popUpCreateRoute(){
-
     let alert = this.alertCtrl.create({
       title: "Do you want to?",
       buttons:[
         {
-        text: "New boulder",
+        text: "Ys",
+        handler: () => {
+          this.navCtrl.parent.select(3);
+        }
       },
       {
-        text: "Resume boulder"
+        text: "No",
+        handler: () => {
+
+        }
       }
     ]
     });
-    console.log("test");
     alert.present();
   }
 }

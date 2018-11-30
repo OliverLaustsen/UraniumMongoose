@@ -63,8 +63,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var TabsPage = /** @class */ (function () {
-    function TabsPage(alertCtrl) {
+    function TabsPage(navParams, alertCtrl, navCtrl) {
+        this.navParams = navParams;
         this.alertCtrl = alertCtrl;
+        this.navCtrl = navCtrl;
         this.newsTab = __WEBPACK_IMPORTED_MODULE_2__news_news__["a" /* NewsPage */];
         this.trainingTab = __WEBPACK_IMPORTED_MODULE_3__training_training__["a" /* TrainingPage */];
         this.createRouteTab = __WEBPACK_IMPORTED_MODULE_4__createRoute_createRoute__["a" /* CreateRoutePage */];
@@ -72,24 +74,33 @@ var TabsPage = /** @class */ (function () {
         this.profileTab = __WEBPACK_IMPORTED_MODULE_6__profile_profile__["a" /* ProfilePage */];
     }
     TabsPage.prototype.popUpCreateRoute = function () {
+        var _this = this;
         var alert = this.alertCtrl.create({
             title: "Do you want to?",
             buttons: [
                 {
-                    text: "New boulder",
+                    text: "Ys",
+                    handler: function () {
+                        _this.navCtrl.parent.select(3);
+                    }
                 },
                 {
-                    text: "Resume boulder"
+                    text: "No",
+                    handler: function () {
+                    }
                 }
             ]
         });
-        console.log("test");
         alert.present();
     };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])("tabBar"),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Tabs */])
+    ], TabsPage.prototype, "tabBar", void 0);
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\tabs\tabs.html"*/'<ion-tabs >\n  <ion-tab [root]="newsTab" tabIcon="invoice"></ion-tab>\n  <ion-tab [root]="trainingTab" tabIcon="dumbbell"></ion-tab>\n  <button (click)="popUpCreateRoute()">\n\n    <ion-tab  style="font-size: 32px;"tabIcon="md-add"></ion-tab>\n  </button>\n  <ion-tab [root]="viewRouteTab" tabIcon="route"></ion-tab>\n  <ion-tab [root]="profileTab" tabIcon="user"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\tabs\tabs.html"*/'<ion-tabs #tabBar>\n  <ion-tab [root]="newsTab" tabIcon="invoice"></ion-tab>\n  <ion-tab [root]="trainingTab" tabIcon="dumbbell"></ion-tab>\n  <ion-tab (ionSelect)="popUpCreateRoute()" style="font-size: 32px;"tabIcon="md-add"></ion-tab>\n  <ion-tab [root]="viewRouteTab" tabIcon="route"></ion-tab>\n  <ion-tab [root]="profileTab" tabIcon="user"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\tabs\tabs.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], TabsPage);
     return TabsPage;
 }());
@@ -224,10 +235,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ViewRoutePage = /** @class */ (function () {
     function ViewRoutePage(navCtrl) {
         this.navCtrl = navCtrl;
+        this.nameOfSetter = "Oliver Laustsen";
+        this.nameOfRoute = "Undercling Ding";
+        this.gradeOfRoute = "7A+";
     }
     ViewRoutePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-viewRoute',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\viewRoute\viewRoute.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      View Route\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\viewRoute\viewRoute.html"*/
+            selector: 'page-viewRoute',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\viewRoute\viewRoute.html"*/'<ion-header style="margin-bottom: 50rem">\n  <ion-navbar>\n    <ion-title>\n      View Route\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<div cards>\n\n  <div class="grid-full">\n    <ion-row>\n      <ion-col>\n        <ion-card>\n          <p>{{nameOfSetter}}</p>\n          <h1>{{gradeOfRoute}}</h1>\n          <p>{{nameOfRoute}}</p>\n        </ion-card>\n      </ion-col>\n\n      <ion-col>\n        <ion-card>\n          <p>{{nameOfSetter}}</p>\n          <h1>{{gradeOfRoute}}</h1>\n          <p>{{nameOfRoute}}</p>\n        </ion-card>\n      </ion-col>\n\n      <ion-col>\n        <ion-card>\n          <p>{{nameOfSetter}}</p>\n          <h1>{{gradeOfRoute}}</h1>\n          <p>{{nameOfRoute}}</p>\n        </ion-card>\n      </ion-col>\n\n      <ion-col>\n        <ion-card>\n          <p>{{nameOfSetter}}</p>\n          <h1>{{gradeOfRoute}}</h1>\n          <p>{{nameOfRoute}}</p>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </div>\n</div>'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\viewRoute\viewRoute.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ViewRoutePage);
@@ -262,6 +276,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ProfilePage = /** @class */ (function () {
     function ProfilePage(navCtrl) {
         this.navCtrl = navCtrl;
+        this.userName = "Oliver Laustsen";
     }
     ProfilePage.prototype.ionViewDidLoad = function () {
         this.trainingChart = new __WEBPACK_IMPORTED_MODULE_2_chart_js__["Chart"](this.trainingCanvas.nativeElement, {
@@ -323,7 +338,7 @@ var ProfilePage = /** @class */ (function () {
     ], ProfilePage.prototype, "trainingCanvas", void 0);
     ProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\profile\profile.html"*/'<ion-header>\n  <ion-navbar color="white">\n    <ion-title>Oliver Laustsen</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content>\n\n  <ion-row padding>\n    <!-- Avatar -->\n    <ion-col col-5>\n      <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11222053_1030132887011170_5420656514196313693_n.jpg?_nc_cat=110&_nc_ht=scontent.fcph1-1.fna&oh=0912894cd78cd81e51d78a8c0385a6d5&oe=5CAA6392" class="avatar" style="border-radius: 100px" alt="">\n    </ion-col>\n    <ion-col col-2 offset-1>\n      <br><br><br>\n      <p profile>Grade</p>\n    </ion-col>\n  </ion-row>\n\n  <!-- Profile info -->\n  <div padding >\n      <ion-card>\n          <ion-card-content>\n            <canvas #trainingCanvas height="400"></canvas>\n          </ion-card-content>\n        </ion-card>\n      <!--<ion-icon style="font-size: 250px;" name="trending-up"></ion-icon>-->\n  </div>\n</ion-content>'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\profile\profile.html"*/
+            selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\profile\profile.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>{{userName}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content>\n\n  <ion-row padding>\n    <!-- Avatar -->\n    <ion-col col-5>\n      <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11222053_1030132887011170_5420656514196313693_n.jpg?_nc_cat=110&_nc_ht=scontent.fcph1-1.fna&oh=0912894cd78cd81e51d78a8c0385a6d5&oe=5CAA6392" class="avatar" style="border-radius: 100px" alt="">\n    </ion-col>\n    <ion-col col-2 offset-1>\n      <br><br>\n      <p profile-tag-text>7A</p>\n      <p profile-tag>Grade</p>\n    </ion-col>\n    <ion-col col-2 offset-1>\n      <br><br>\n      <p profile-tag-text>6B+</p>\n      <p profile-tag>Grade</p>\n    </ion-col>\n  </ion-row>\n\n  <!-- Profile info -->\n  <div padding >\n      <ion-card>\n          <ion-card-content>\n            <canvas #trainingCanvas height="400"></canvas>\n          </ion-card-content>\n        </ion-card>\n      <!--<ion-icon style="font-size: 250px;" name="trending-up"></ion-icon>-->\n  </div>\n</ion-content>'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\profile\profile.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ProfilePage);
@@ -464,7 +479,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\app\app.html"*/'\n<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());

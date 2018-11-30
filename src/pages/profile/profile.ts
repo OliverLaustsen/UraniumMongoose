@@ -12,13 +12,13 @@ export class ProfilePage {
   @ViewChild('trainingCanvas') trainingCanvas;
 
   trainingChart: any;
+  userName: string;
 
   constructor(public navCtrl: NavController) {
-
+    this.userName = "Oliver Laustsen";
   }
 
   ionViewDidLoad(){
-   
     this.trainingChart = new Chart(this.trainingCanvas.nativeElement, {
  
       type: 'line',

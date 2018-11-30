@@ -25678,6 +25678,21 @@ page-contact .ios page-home ion-card-header, page-contact .md page-home ion-card
   font-weight: bold;
 }
 
+page-contact .ios profile-tag, page-contact .md profile-tag {
+  font-weight: bolder;
+  font-size: 16px;
+  color: gold !important;
+  font-style: italic;
+}
+
+page-contact .ios profile-tag-text, page-contact .md profile-tag-text {
+  font-weight: bolder;
+  font-size: 14px;
+  color: gold !important;
+  font-style: italic;
+  padding-bottom: 0;
+}
+
 .ion-md-dumbbell {
   content: url("../../assets/icon/dumbbell.png") !important;
 }
@@ -25696,4 +25711,53 @@ page-contact .ios page-home ion-card-header, page-contact .md page-home ion-card
 
 .ion-md-add {
   content: url("../../assets/icon/add.png") !important;
+}
+
+.ion-tab:hover {
+  color: rgba(75, 192, 192, 0.4);
+}
+
+.routeDiv {
+  border-style: solid;
+  border-radius: 10%;
+  max-width: 30%;
+  max-height: 30%;
+}
+
+[cards] .grid-full ion-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 5px 0;
+}
+
+[cards] .row {
+  padding: 0 12px;
+  padding-top: 66px;
+}
+
+[cards] .col {
+  padding: 5px 0;
+}
+
+[cards] .card {
+  margin: 0 5px;
+  width: calc(100% - 10px);
+  padding: 14px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  border-style: solid;
+}
+
+[cards] .card h1 {
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+[cards] .card p {
+  font-weight: 100;
+  font-size: 1.5rem;
 }

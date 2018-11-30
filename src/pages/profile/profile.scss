@@ -10,9 +10,21 @@ page-contact {
      
             ion-card-header {
                 font-weight: bold;
-            }
-     
+            }    
         }
-     
+        profile-tag {
+            font-weight: bolder;
+            font-size: 16px;
+            color: gold !important;
+            font-style: italic;
+        }
+        profile-tag-text {
+            font-weight: bolder;
+            font-size: 14px;
+            color: gold !important;
+            font-style: italic;
+            padding-bottom: 0;
+        } 
     }
 }
+

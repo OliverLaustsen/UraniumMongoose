@@ -7,8 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class ViewRoutePage {
 
-  constructor(public navCtrl: NavController) {
+  nameOfSetter: string;
+  nameOfRoute: string;
+  gradeOfRoute: string;
 
+  constructor(public navCtrl: NavController) {
+    this.nameOfSetter = "Oliver Laustsen";
+    this.nameOfRoute = "Undercling Ding";
+    this.gradeOfRoute = "7A+"
   }
 
 }
