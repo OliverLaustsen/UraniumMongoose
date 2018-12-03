@@ -1,21 +1,37 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component, ElementRef, Directive } from '@angular/core';
+import { NavController, Gesture } from 'ionic-angular';
+import { directive } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'page-viewRoute',
-  templateUrl: 'viewRoute.html'
+  templateUrl: 'viewRoute.html',
+})
+
+@Directive({
+  selector: '[longPress]',
 })
 
 export class ViewRoutePage {
+
+  boulderSquare: HTMLElement;
+  pressGesture: Gesture;
+  releaseGesture: Gesture;
 
   nameOfSetter: string;
   nameOfRoute: string;
   gradeOfRoute: string;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, boulderSquare: ElementRef) {
+
+    this.boulderSquare = boulderSquare.nativeElement;
+
     this.nameOfSetter = "Oliver Laustsen";
     this.nameOfRoute = "Undercling Ding";
     this.gradeOfRoute = "7A+";
+  }
+
+  ngOnDestroy() {
+    this.pressGesture.destroy();
   }
 
   ionViewDidLoad(){
@@ -23,6 +39,8 @@ export class ViewRoutePage {
       this.CreateAndPopulateViewRoutePage();  
     }
   }
+  
+
 
   CreateAndPopulateViewRoutePage(){
     var boulderSquareCol = document.createElement("ion-col");
@@ -33,6 +51,7 @@ export class ViewRoutePage {
 
     boulderSquareCol.className = "col";
     boulderSquareCard.className = "card card-md"
+    boulderSquareCol.setAttribute("press",'"=onPress($event)"');
 
     var bouldernameOfRoute = document.createTextNode(this.nameOfRoute + "");
     var bouldergradeOfRoute = document.createTextNode(this.gradeOfRoute + "");
@@ -50,5 +69,14 @@ export class ViewRoutePage {
 
     boulderSquareCol.appendChild(boulderSquareCard)
     boulderSquareRow.appendChild(boulderSquareCol);
+  }
+
+  createPopUpImage(){
+    var popUpDiv = document.createElement("div");
+    var popUpImg = document.createElement("img");
+
+    popUpDiv.className = "TODO";
+    popUpImg.src = "https://fitness-gaming.com/images/Markets/Events_and_Fun/2707_augmented_climbing_wall_gets_global_service_package_through_new_partnership_with_entre_prises/008_augmented_climbing_wall.jpg";
+
   }
 }

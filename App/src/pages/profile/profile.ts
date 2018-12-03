@@ -76,7 +76,7 @@ export class ProfilePage {
               pointHoverBorderWidth: 2,
               pointRadius: 1,
               pointHitRadius: 10,
-              data: [30, 20, 42, 44, 52, 49, 80],
+              data: [69, 50, 62, 44, 62, 49],
               spanGaps: false,
           }
         ]
