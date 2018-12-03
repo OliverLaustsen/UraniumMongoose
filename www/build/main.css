@@ -25735,7 +25735,7 @@ page-contact .ios profile-tag-text, page-contact .md profile-tag-text {
 
 [cards] .row {
   padding: 0 12px;
-  padding-top: 66px;
+  padding-top: 6px;
 }
 
 [cards] .col {
@@ -25746,10 +25746,10 @@ page-contact .ios profile-tag-text, page-contact .md profile-tag-text {
   margin: 0 5px;
   width: calc(100% - 10px);
   padding: 14px;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background: lightgray;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
   border-radius: 40px;
-  border-style: solid;
 }
 
 [cards] .card h1 {

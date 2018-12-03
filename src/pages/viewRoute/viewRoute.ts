@@ -5,6 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-viewRoute',
   templateUrl: 'viewRoute.html'
 })
+
 export class ViewRoutePage {
 
   nameOfSetter: string;
@@ -14,7 +15,7 @@ export class ViewRoutePage {
   constructor(public navCtrl: NavController) {
     this.nameOfSetter = "Oliver Laustsen";
     this.nameOfRoute = "Undercling Ding";
-    this.gradeOfRoute = "7A+"
+    this.gradeOfRoute = "7A+";
   }
 
   ionViewDidLoad(){
@@ -50,5 +51,4 @@ export class ViewRoutePage {
     boulderSquareCol.appendChild(boulderSquareCard)
     boulderSquareRow.appendChild(boulderSquareCol);
   }
-
 }

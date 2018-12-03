@@ -98,7 +98,7 @@ var TabsPage = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Tabs */])
     ], TabsPage.prototype, "tabBar", void 0);
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\tabs\tabs.html"*/'<ion-tabs #tabBar>\n  <ion-tab [root]="newsTab" tabIcon="invoice"></ion-tab>\n  <ion-tab [root]="trainingTab" tabIcon="dumbbell"></ion-tab>\n  <ion-tab (ionSelect)="popUpCreateRoute()" style="font-size: 32px;"tabIcon="md-add"></ion-tab>\n  <ion-tab [root]="viewRouteTab" tabIcon="route"></ion-tab>\n  <ion-tab [root]="profileTab" tabIcon="user"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\tabs\tabs.html"*/'<ion-tabs #tabBar>\n\n  <ion-tab [root]="newsTab" tabIcon="invoice"></ion-tab>\n\n  <ion-tab [root]="trainingTab" tabIcon="dumbbell"></ion-tab>\n\n  <ion-tab (ionSelect)="popUpCreateRoute()" style="font-size: 32px;"tabIcon="md-add"></ion-tab>\n\n  <ion-tab [root]="viewRouteTab" tabIcon="route"></ion-tab>\n\n  <ion-tab [root]="profileTab" tabIcon="user"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], TabsPage);
@@ -133,7 +133,7 @@ var NewsPage = /** @class */ (function () {
     }
     NewsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-news',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\news\news.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      News\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <a href="">\n      <div>\n        <img src="https://image.redbull.com/rbcom/052/2017-12-04/43e519f2-a52e-40c2-b868-4a97b31defc8/0012/0/0/0/3604/5406/1500/1/bouldering.jpg" />\n      </div>\n    </a>\n    <ion-card-content>\n      <ion-card-title>\n        New routes! @ CPH Boulders\n      </ion-card-title>\n      <p>\n        The amphitheater is brand new, every route has a hint\n        of this weeks theme - Gaston.\n        So come and give it a go!\n      </p>\n    </ion-card-content>\n    <ion-row no-padding>\n    </ion-row>\n  </ion-card>\n  <ion-card>\n    <a href="">\n      <div>\n        <img src="https://i.ytimg.com/vi/2usFUbqPvl4/maxresdefault.jpg" />\n      </div>\n    </a>\n      <ion-card-content>\n      <ion-card-title>\n        Tips for Beginners\n      </ion-card-title>\n      <p>\n        This blog post cotains 10 tips to beginners and a written guide for selection of shoes\n        and some warm-up exercises. \n      </p>\n    </ion-card-content>\n    <ion-row no-padding>\n    </ion-row>\n  </ion-card>\n  <ion-card>\n    <a href="">\n      <div>\n        <img src="https://www.climbing.com/.image/t_share/MTU0OTQ3ODQyNjUyMjUxNjU1/30740303_1020318921452879_9079879150885404672_o.jpg" />\n      </div>\n    </a>\n      <ion-card-content>\n      <ion-card-title>\n        Finals @ CPH FunCup\n      </ion-card-title>\n      <p>\n        Video and result for this weeks finals at CPH FunCup is up, \n        read a interview with the finalists. Hear the routesetters thoughts \n        on the solutions for the finals.\n      </p>\n    </ion-card-content>\n    <ion-row no-padding>\n    </ion-row>\n  </ion-card>'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\news\news.html"*/
+            selector: 'page-news',template:/*ion-inline-start:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\news\news.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      News\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card>\n\n    <a href="">\n\n      <div>\n\n        <img src="https://image.redbull.com/rbcom/052/2017-12-04/43e519f2-a52e-40c2-b868-4a97b31defc8/0012/0/0/0/3604/5406/1500/1/bouldering.jpg" />\n\n      </div>\n\n    </a>\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        New routes! @ CPH Boulders\n\n      </ion-card-title>\n\n      <p>\n\n        The amphitheater is brand new, every route has a hint\n\n        of this weeks theme - Gaston.\n\n        So come and give it a go!\n\n      </p>\n\n    </ion-card-content>\n\n    <ion-row no-padding>\n\n    </ion-row>\n\n  </ion-card>\n\n  <ion-card>\n\n    <a href="">\n\n      <div>\n\n        <img src="https://i.ytimg.com/vi/2usFUbqPvl4/maxresdefault.jpg" />\n\n      </div>\n\n    </a>\n\n      <ion-card-content>\n\n      <ion-card-title>\n\n        Tips for Beginners\n\n      </ion-card-title>\n\n      <p>\n\n        This blog post cotains 10 tips to beginners and a written guide for selection of shoes\n\n        and some warm-up exercises. \n\n      </p>\n\n    </ion-card-content>\n\n    <ion-row no-padding>\n\n    </ion-row>\n\n  </ion-card>\n\n  <ion-card>\n\n    <a href="">\n\n      <div>\n\n        <img src="https://www.climbing.com/.image/t_share/MTU0OTQ3ODQyNjUyMjUxNjU1/30740303_1020318921452879_9079879150885404672_o.jpg" />\n\n      </div>\n\n    </a>\n\n      <ion-card-content>\n\n      <ion-card-title>\n\n        Finals @ CPH FunCup\n\n      </ion-card-title>\n\n      <p>\n\n        Video and result for this weeks finals at CPH FunCup is up, \n\n        read a interview with the finalists. Hear the routesetters thoughts \n\n        on the solutions for the finals.\n\n      </p>\n\n    </ion-card-content>\n\n    <ion-row no-padding>\n\n    </ion-row>\n\n  </ion-card>'/*ion-inline-end:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\news\news.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], NewsPage);
@@ -168,7 +168,7 @@ var TrainingPage = /** @class */ (function () {
     }
     TrainingPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-training',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\training\training.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Training\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\training\training.html"*/
+            selector: 'page-training',template:/*ion-inline-start:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\training\training.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Training\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h2>Welcome to Ionic!</h2>\n\n  <p>\n\n    This starter project comes with simple tabs-based layout for apps\n\n    that are going to primarily use a Tabbed UI.\n\n  </p>\n\n  <p>\n\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n\n    update any existing page or create new pages.\n\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\training\training.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], TrainingPage);
@@ -203,7 +203,7 @@ var CreateRoutePage = /** @class */ (function () {
     }
     CreateRoutePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-createRoute',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\createRoute\createRoute.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Create Route\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\createRoute\createRoute.html"*/
+            selector: 'page-createRoute',template:/*ion-inline-start:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\createRoute\createRoute.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Create Route\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\createRoute\createRoute.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], CreateRoutePage);
@@ -239,13 +239,40 @@ var ViewRoutePage = /** @class */ (function () {
         this.nameOfRoute = "Undercling Ding";
         this.gradeOfRoute = "7A+";
     }
+    ViewRoutePage.prototype.ionViewDidLoad = function () {
+        for (var i = 0; i < 20; i++) {
+            this.CreateAndPopulateViewRoutePage();
+        }
+    };
+    ViewRoutePage.prototype.CreateAndPopulateViewRoutePage = function () {
+        var boulderSquareCol = document.createElement("ion-col");
+        var boulderSquareCard = document.createElement("ion-card");
+        var boulderSquareNameOfSetter = document.createElement("p");
+        var boulderSquareGradeOfRoute = document.createElement("h1");
+        var boulderSquareNameOfRoute = document.createElement("p");
+        boulderSquareCol.className = "col";
+        boulderSquareCard.className = "card card-md";
+        var bouldernameOfRoute = document.createTextNode(this.nameOfRoute + "");
+        var bouldergradeOfRoute = document.createTextNode(this.gradeOfRoute + "");
+        var bouldernameOfSetter = document.createTextNode(this.nameOfSetter + "");
+        boulderSquareNameOfRoute.appendChild(bouldernameOfRoute);
+        boulderSquareGradeOfRoute.appendChild(bouldergradeOfRoute);
+        boulderSquareNameOfSetter.appendChild(bouldernameOfSetter);
+        var boulderSquareRow = document.getElementById("boulderSquareRow");
+        boulderSquareCard.appendChild(boulderSquareNameOfRoute);
+        boulderSquareCard.appendChild(boulderSquareGradeOfRoute);
+        boulderSquareCard.appendChild(boulderSquareNameOfSetter);
+        boulderSquareCol.appendChild(boulderSquareCard);
+        boulderSquareRow.appendChild(boulderSquareCol);
+    };
     ViewRoutePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-viewRoute',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\viewRoute\viewRoute.html"*/'<ion-header style="margin-bottom: 50rem">\n  <ion-navbar>\n    <ion-title>\n      View Route\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<div cards>\n\n  <div class="grid-full">\n    <ion-row>\n      <ion-col>\n        <ion-card>\n          <p>{{nameOfSetter}}</p>\n          <h1>{{gradeOfRoute}}</h1>\n          <p>{{nameOfRoute}}</p>\n        </ion-card>\n      </ion-col>\n\n      <ion-col>\n        <ion-card>\n          <p>{{nameOfSetter}}</p>\n          <h1>{{gradeOfRoute}}</h1>\n          <p>{{nameOfRoute}}</p>\n        </ion-card>\n      </ion-col>\n\n      <ion-col>\n        <ion-card>\n          <p>{{nameOfSetter}}</p>\n          <h1>{{gradeOfRoute}}</h1>\n          <p>{{nameOfRoute}}</p>\n        </ion-card>\n      </ion-col>\n\n      <ion-col>\n        <ion-card>\n          <p>{{nameOfSetter}}</p>\n          <h1>{{gradeOfRoute}}</h1>\n          <p>{{nameOfRoute}}</p>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </div>\n</div>'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\viewRoute\viewRoute.html"*/
+            selector: 'page-viewRoute',template:/*ion-inline-start:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\viewRoute\viewRoute.html"*/'<ion-header style="margin-bottom: 50rem">\n\n  <ion-navbar>\n\n    <ion-title>\n\n      View Route\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div cards>\n\n    <div class="grid-full">\n\n      <ion-row id="boulderSquareRow">\n\n      </ion-row>\n\n    </div>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\viewRoute\viewRoute.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
     ], ViewRoutePage);
     return ViewRoutePage;
+    var _a;
 }());
 
 //# sourceMappingURL=viewRoute.js.map
@@ -279,7 +306,7 @@ var ProfilePage = /** @class */ (function () {
         this.userName = "Oliver Laustsen";
     }
     ProfilePage.prototype.ionViewDidLoad = function () {
-        this.trainingChart = new __WEBPACK_IMPORTED_MODULE_2_chart_js__["Chart"](this.trainingCanvas.nativeElement, {
+        this.trainingLineChart = new __WEBPACK_IMPORTED_MODULE_2_chart_js__["Chart"](this.trainingLineCanvas.nativeElement, {
             type: 'line',
             data: {
                 labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -306,10 +333,18 @@ var ProfilePage = /** @class */ (function () {
                         data: [65, 59, 80, 81, 56, 55, 40],
                         spanGaps: false,
                     },
+                ]
+            }
+        });
+        this.trainingRadarChart = new __WEBPACK_IMPORTED_MODULE_2_chart_js__["Chart"](this.trainingRadarCanvas.nativeElement, {
+            type: 'radar',
+            data: {
+                labels: ["Crimps", "Jugs", "Sloppers", "Undercling", "Gaston", "Pockets"],
+                datasets: [
                     {
-                        label: "Intensity",
+                        label: "Skill Level",
                         fill: true,
-                        lineTension: 0.3,
+                        lineTension: 0.1,
                         backgroundColor: "rgba(192,75,75,0.2)",
                         borderColor: "rgba(192,75,75,1)",
                         borderCapStyle: 'butt',
@@ -333,12 +368,16 @@ var ProfilePage = /** @class */ (function () {
         });
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('trainingCanvas'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('trainingLineCanvas'),
         __metadata("design:type", Object)
-    ], ProfilePage.prototype, "trainingCanvas", void 0);
+    ], ProfilePage.prototype, "trainingLineCanvas", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('trainingRadarCanvas'),
+        __metadata("design:type", Object)
+    ], ProfilePage.prototype, "trainingRadarCanvas", void 0);
     ProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\profile\profile.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>{{userName}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content>\n\n  <ion-row padding>\n    <!-- Avatar -->\n    <ion-col col-5>\n      <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11222053_1030132887011170_5420656514196313693_n.jpg?_nc_cat=110&_nc_ht=scontent.fcph1-1.fna&oh=0912894cd78cd81e51d78a8c0385a6d5&oe=5CAA6392" class="avatar" style="border-radius: 100px" alt="">\n    </ion-col>\n    <ion-col col-2 offset-1>\n      <br><br>\n      <p profile-tag-text>7A</p>\n      <p profile-tag>Grade</p>\n    </ion-col>\n    <ion-col col-2 offset-1>\n      <br><br>\n      <p profile-tag-text>6B+</p>\n      <p profile-tag>Grade</p>\n    </ion-col>\n  </ion-row>\n\n  <!-- Profile info -->\n  <div padding >\n      <ion-card>\n          <ion-card-content>\n            <canvas #trainingCanvas height="400"></canvas>\n          </ion-card-content>\n        </ion-card>\n      <!--<ion-icon style="font-size: 250px;" name="trending-up"></ion-icon>-->\n  </div>\n</ion-content>'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\pages\profile\profile.html"*/
+            selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\profile\profile.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{userName}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content>\n\n\n\n  <ion-row padding>\n\n    <!-- Avatar -->\n\n    <ion-col col-5>\n\n      <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11222053_1030132887011170_5420656514196313693_n.jpg?_nc_cat=110&_nc_ht=scontent.fcph1-1.fna&oh=0912894cd78cd81e51d78a8c0385a6d5&oe=5CAA6392" class="avatar" style="border-radius: 100px" alt="">\n\n    </ion-col>\n\n    <ion-col col-2 offset-1>\n\n      <br><br>\n\n      <p profile-tag-text>7A</p>\n\n      <p profile-tag>Grade</p>\n\n    </ion-col>\n\n    <ion-col col-2 offset-1>\n\n      <br><br>\n\n      <p profile-tag-text>6B+</p>\n\n      <p profile-tag>Grade</p>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n  <!-- Profile info -->\n\n  <div padding class="slider">\n\n\n\n    <ion-slides>\n\n      <ion-slide>\n\n        <ion-card>\n\n          <ion-card-content>\n\n            <canvas #trainingLineCanvas height="400"></canvas>\n\n          </ion-card-content>\n\n        </ion-card>\n\n      </ion-slide>\n\n      <ion-slide>\n\n        <ion-card>\n\n          <ion-card-content>\n\n            <canvas #trainingRadarCanvas height="400"> </canvas>\n\n          </ion-card-content>\n\n        </ion-card>\n\n      </ion-slide>\n\n    </ion-slides>\n\n      <!--<ion-icon style="font-size: 250px;" name="trending-up"></ion-icon>-->\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\pages\profile\profile.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ProfilePage);
@@ -477,7 +516,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\app\app.html"*/'\n<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\Olive\Documents\repos\UraniumMongoose\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\app\app.html"*/'\n\n<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Olive\Documents\repo\UraniumMongoose\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
