@@ -24,12 +24,24 @@
   </ion-row>
 
   <!-- Profile info -->
-  <div padding >
-      <ion-card>
+  <div padding class="slider">
+
+    <ion-slides>
+      <ion-slide>
+        <ion-card>
           <ion-card-content>
-            <canvas #trainingCanvas height="400"></canvas>
+            <canvas #trainingLineCanvas height="400"></canvas>
           </ion-card-content>
         </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-content>
+            <canvas #trainingRadarCanvas height="400"> </canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
       <!--<ion-icon style="font-size: 250px;" name="trending-up"></ion-icon>-->
   </div>
 </ion-content>
